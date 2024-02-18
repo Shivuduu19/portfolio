@@ -1,6 +1,8 @@
 import shoppingCart from "./assets/shoppingCart.png";
 import memoryGame from "./assets/memoryGame.png";
 import cv from "./assets/cv.png";
+import { FaGithub } from "react-icons/fa";
+import { CiLinkedin } from "react-icons/ci";
 function App() {
   return (
     <>
@@ -180,7 +182,41 @@ function App() {
             </div>
           </div>
         </section>
+        {/* about me */}
+
+        <section className=" mt-8">
+          <div className="container m-auto">
+            <h2 className="text-3xl">About me</h2>
+            <p className="mt-12 text-gray-400 text-2xl text-center">
+              I got interested in front end development last year and learning
+              since 1 year by building projects
+            </p>
+          </div>
+        </section>
       </main>
+      {/* footer */}
+      <footer className="mt-9 bg-cyan-950 p-9">
+        <div className="flex justify-between mx-8">
+          <p className="text-2xl">copyright @ 2024</p>
+          <div>
+            <ul className="flex text-4xl gap-3">
+              <a href="">
+                <li>
+                  <FaGithub />
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <CiLinkedin />
+                </li>
+              </a>
+              <a href="">
+                <li></li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
