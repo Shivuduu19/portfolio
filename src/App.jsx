@@ -9,21 +9,34 @@ function App() {
       <header>
         <div className="container m-auto px-4 py-6">
           <div className="flex justify-between items-center ">
-            <h1 className="font-bold text-2xl text-green-400">
+            <h1 className="font-bold text-4xl text-green-400">
               Shiva's portfolio
             </h1>
             <div>
-              <ul className="flex justify-between md:gap-5 gap-3 ">
-                <li>
-                  <a className="text-gray-300 hover:text-gray-500">Projects</a>
+              <ul className="flex justify-between md:gap-9 gap-3 ">
+                <li className="text-2xl">
+                  <a
+                    href="#projects"
+                    className="text-gray-300 hover:text-gray-500"
+                  >
+                    Projects
+                  </a>
                 </li>
-                <li>
-                  <a className="text-gray-300 hover:text-gray-500">
+                <li className="text-2xl">
+                  <a
+                    href="#technologies"
+                    className="text-gray-300 hover:text-gray-500"
+                  >
                     Technologies
                   </a>
                 </li>
-                <li>
-                  <a className="text-gray-300 hover:text-gray-500">About me</a>
+                <li className="text-2xl">
+                  <a
+                    href="#aboutme"
+                    className="text-gray-300 hover:text-gray-500"
+                  >
+                    About me
+                  </a>
                 </li>
               </ul>
             </div>
@@ -33,15 +46,15 @@ function App() {
       <main>
         {/* intro section */}
         <section className="mx-auto">
-          <div className="container m-auto px-4 py-10">
+          <div className="container m-auto mt-5 mb-9 px-4 py-10">
             <div>
-              <h1 className="font-bold text-3xl text-center">
+              <h1 className="font-bold text-5xl text-center">
                 Hiii... , I'm shiva kumar,
               </h1>
-              <h1 className="font-bold text-3xl text-center clip mt-1">
+              <h1 className="font-bold text-5xl text-center clip mt-1">
                 Front-end developer
               </h1>
-              <p className="mx-auto text-center  mt-5 text-gray-400 w-2/4">
+              <p className="mx-auto text-center text-3xl mt-5 text-gray-400 w-2/4">
                 I have 1 year of experience in creating and developing user
                 interfaces and I'm seeking to apply and develop my skills
                 further
@@ -50,22 +63,22 @@ function App() {
           </div>
         </section>
         {/* projects section */}
-        <section>
-          <div className="container m-auto">
+        <section id="projects">
+          <div className="container m-auto mb-9">
             <h1 className="text-3xl font-bold">Projects</h1>
-            <div className="flex justify-center gap-7 mt-5">
+            <div className="flex justify-center gap-7 mt-16">
               {/* project 1 */}
               <div className="w-1/3  border-blue-600 border rounded-md p-6">
                 <img src={shoppingCart} />
-                <h2 className="font-semibold text-sm mt-4">
+                <h2 className="font-semibold text-lg mt-4">
                   fake shopping cart for shopping things in online
                 </h2>
-                <p className="text-xs mt-2 break-words">
+                <p className="text-lg mt-2 break-words">
                   Responsive page made with reactjs, redux,html5,css3,fakeAPI
                   and styled-components
                 </p>
                 <div className="mt-auto mb-2">
-                  <div className="flex gap-4  justify-center  mt-auto mb-2 ">
+                  <div className="flex gap-4  justify-center mt-6 mb-2 ">
                     <button className="text-xs lg:text-lg clip from-white to-yellow-400 hover:from-yellow-500">
                       source code
                     </button>
@@ -78,11 +91,11 @@ function App() {
               {/* project 2 */}
               <div className="w-1/3 border-blue-600 border rounded-md p-6">
                 <img src={memoryGame} />
-                <h2 className="font-semibold text-sm mt-4">A memory game</h2>
-                <p className="text-xs mt-2 break-words">
+                <h2 className="font-semibold text-lg mt-4">A memory game</h2>
+                <p className="text-lg mt-2 break-words">
                   Made with :React,Pokemon API,styled-components and vite
                 </p>
-                <div className="flex gap-4 justify-center mt-auto mb-2">
+                <div className="flex gap-4 justify-center mt-5 mb-2">
                   <button className="text-xs lg:text-lg clip from-white to-yellow-400 hover:from-yellow-500">
                     source code
                   </button>
@@ -96,10 +109,10 @@ function App() {
               {/* project 3 */}
               <div className="w-1/3 border-blue-600 border rounded-md p-6">
                 <img src={cv} />
-                <h2 className="font-semibold text-sm mt-4">
+                <h2 className="font-semibold text-lg mt-4">
                   CV Apllication with an example
                 </h2>
-                <p className="text-xs mt-2 break-words">
+                <p className="text-lg mt-2 break-words">
                   Responsive page made by React,uuid package,react-icons and
                   vite
                 </p>
@@ -115,10 +128,10 @@ function App() {
               {/* project 4 */}
               <div className="w-1/3 border-blue-600 border rounded-md p-6">
                 <img src={memoryGame} />
-                <h2 className="font-semibold text-sm mt-4">
+                <h2 className="font-semibold text-lg mt-4">
                   fake shopping cart for shopping things in online
                 </h2>
-                <p className="text-xs mt-2 break-words">
+                <p className="text-lg mt-2 break-words">
                   Responsive page made with reactjs, redux,html5,css3,fakeAPI
                   and styled-components
                 </p>
@@ -136,10 +149,10 @@ function App() {
           </div>
         </section>
         {/* technologies  */}
-        <section className="mt-10">
-          <div className="container m-auto px-4">
+        <section id="technologies">
+          <div className="container m-auto mb-9 ">
             <h2 className="text-3xl font-bold">Technologies</h2>
-            <div className="mt-7">
+            <div className="mt-16 mb-9 px-4">
               <div>
                 <div className="flex justify-between items-center">
                   <h2 className="text-3xl font-bold px-5">HTML</h2>
@@ -184,10 +197,10 @@ function App() {
         </section>
         {/* about me */}
 
-        <section className=" mt-8">
-          <div className="container m-auto">
-            <h2 className="text-3xl">About me</h2>
-            <p className="mt-12 text-gray-400 text-2xl text-center">
+        <section id="aboutme">
+          <div className="container m-auto mt-16">
+            <h2 className="text-3xl font-bold ">About me</h2>
+            <p className="mt-16 mb-16 text-gray-400 text-2xl text-center">
               I got interested in front end development last year and learning
               since 1 year by building projects
             </p>
