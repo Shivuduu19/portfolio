@@ -6,3 +6,4 @@
 
 - React
 - TailwindCSS
+- vite
