@@ -2,7 +2,7 @@
 
 [Live here](https://resilient-lebkuchen-79d5dd.netlify.app/)
 
-##Technologies:
+## Technologies:
 
 - React
 - TailwindCSS
